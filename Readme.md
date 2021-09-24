@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Василий Крайний](https://up.htmlacademy.ru/javascript/24/user/1483307).
-* Наставник: `Дмитрий Гуляев`.(https://htmlacademy.ru/profile/dima)
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
