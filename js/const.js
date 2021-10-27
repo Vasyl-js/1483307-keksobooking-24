@@ -1,27 +1,3 @@
-//import {LOCATION_LAT_FROM, LOCATION_LAT_TO, LOCATION_LNG_FROM, LOCATION_LNG_TO, location, AUTHOR, TYPE_OF_HOUSES, CHECKINS_CHECKOUTS, offer} from './const';
-//import {getRandomIntInclusive, getRandomArbitrary} from './function';
-
-//Функция, возвращающая случайное целое число из переданного диапазона включительно
-//https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
-}
-getRandomIntInclusive();
-
-
-//Функция, возвращающая случайное число с плавающей точкой из переданного диапазона включительно
-//https://qna.habr.com/q/999157
-function getRandomArbitrary(min, max, maxDigits = 1) {
-  if (min > max || min < 0 || max <= 0) {
-    return ('Задан неверный диапазон! Укажите другие числа.');
-  }
-
-  const digitsDegree = 10 ** maxDigits;
-  return ~~((Math.random() * (max - min) + min) * digitsDegree) / digitsDegree;
-}
-getRandomArbitrary();
 const LOCATION_LAT_FROM = 35.65000;
 const LOCATION_LAT_TO = 35.70000;
 const LOCATION_LNG_FROM = 139.70000;
@@ -35,6 +11,7 @@ const location = {
 const AUTHOR = {
   avatar: `img/avatars/user${getRandomIntInclusive(1, 10)}.png`,
 };
+AUTHOR;
 
 const TYPE_OF_HOUSES = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
 const CHECKINS_CHECKOUTS = ['12:00', '13:00', '14:00'];
@@ -52,3 +29,5 @@ const offer = {
   description: 'В новой квартире есть где развернуться, она в новом доме, в престижном районе, и рядом расположены садик и школа.',
   photos: ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'],
 };
+offer;
+export {LOCATION_LAT_FROM, LOCATION_LAT_TO, LOCATION_LNG_FROM, LOCATION_LNG_TO, location, AUTHOR, TYPE_OF_HOUSES, CHECKINS_CHECKOUTS, offer};
